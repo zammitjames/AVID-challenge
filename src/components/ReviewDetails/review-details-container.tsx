@@ -33,7 +33,7 @@ const ReviewDetailsContainer = ({ review }: Props) => {
            <Paper className={classes.paper}>
                 <Typography variant="h6">{review.review_title}</Typography>
                 <Typography variant="subtitle2">{review.review_text}</Typography>
-                <Typography variant="subtitle2">{review.profile_name}</Typography>
+                <Typography data-cy="profile-name" variant="subtitle2">{review.profile_name}</Typography>
                 <Typography variant="subtitle2">{review.product_company}</Typography>
                 <Rating className={classes.rating} name="read-only" value={convertRatingToNumber(review.review_rating)} readOnly />
                 <div className={classes.buttonContainer}><Button endIcon={<ArrowForward />} variant="outlined" onClick={() => window.location.href=review.url}>Go To Product URL</Button></div>

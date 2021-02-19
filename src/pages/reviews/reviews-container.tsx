@@ -39,7 +39,7 @@ const ReviewsContainer = ({ reviews, errorMessage }: Props) => {
 
     return (
         <div className={classes.root}>
-            <Grid container spacing={3}>
+            <Grid data-cy="review-items" container spacing={3}>
                 {reviews.map((item, index) => {
                     return (
                         <ReviewCard
